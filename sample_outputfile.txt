@@ -1,0 +1,73 @@
+Sample Output
+
+Log Monitoring Menu
+1. Total log count
+2. Count per log level
+3. Most frequent ERROR message
+4. Filter logs by time range
+5. Export analytics to JSON
+6. Exit
+
+1. Total log count
+Enter choice: 1
+
+Output: 
+Total logs: 150
+
+2. Count per log level
+Enter choice: 2
+
+Output: 
+Log count by level:
+{'INFO': 74, 'WARNING': 37, 'ERROR': 39}
+
+3. Most frequent ERROR message
+Enter choice: 3
+
+Output: 
+Most frequent ERROR: (['Database connection timed out.'], 3)
+
+4. Filter logs by time range
+Enter choice: 4
+Enter start time (YYYY-MM-DD HH:MM:SS): 2026-01-19 08:00:33
+Enter end time (YYYY-MM-DD HH:MM:SS): 2026-01-19 08:04:12
+
+Output: 
+2026-01-19 08:00:33 WARNING High memory usage detected.
+2026-01-19 08:00:52 ERROR Database connection timed out.
+2026-01-19 08:00:52 ERROR Database connection timed out.
+2026-01-19 08:00:52 ERROR Database connection timed out.
+2026-01-19 08:01:10 INFO Background sync started.
+2026-01-19 08:01:27 ERROR Invalid authentication token.
+2026-01-19 08:01:50 INFO Data export completed.
+2026-01-19 08:02:04 WARNING Disk usage reached 80%.
+2026-01-19 08:02:29 INFO Payment request completed.
+2026-01-19 08:02:55 ERROR Unable to parse request payload.
+2026-01-19 08:03:11 INFO Scheduled task executed.
+2026-01-19 08:03:33 WARNING API rate limit approaching.
+2026-01-19 08:03:50 INFO Log cleanup initiated.
+2026-01-19 08:04:12 ERROR Unable to process file upload.
+
+5. Export analytics to JSON
+Enter choice: 5
+
+Output: 
+Report exported to report.json
+
+{
+    "total_logs": 150,
+    "count_by_level": {
+        "INFO": 74,
+        "WARNING": 37,
+        "ERROR": 39
+    },
+    "most_frequent_error": {
+        "message": [
+            "Database connection timed out."
+        ],
+        "count": 3
+    }
+}
+
+Enter choice: 6
+Exit
