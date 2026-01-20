@@ -17,12 +17,17 @@ A Python-based log monitoring and analytics tool.
 
 ## Clone && Running 
 
-1) Clone the repository
+1) Clone the repository:
 
-    git clone https://github.com/Sandeepreyyi/log_monitor.git
-    cd log_monitor
-2) Add Sample.log file in log_monitor folder
+    - git clone https://github.com/Sandeepreyyi/log_monitor.git
+    - cd log_monitor
 
-3) Run the application
+2) Log file Set up:
+
+    - Add log file in log_monitor folder
+    - change the log file name in main.py file 
+
+
+3) Run the application:
 
     python main.py
