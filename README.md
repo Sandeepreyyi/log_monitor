@@ -19,9 +19,10 @@ A Python-based log monitoring and analytics tool.
 
 1) Clone the repository
 
-    git clone <your-github-repo-url>
+    git clone https://github.com/Sandeepreyyi/log_monitor.git
     cd log_monitor
+2) Add Sample.log file in log_monitor folder
 
-2) Run the application
+3) Run the application
 
     python main.py
