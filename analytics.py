@@ -28,7 +28,8 @@ def most_frequent_error(logs):
     min_count = min(counter.values())
     messages = []
     if max_count == min_count:
-        messages, max_count = counter.most_common(1)[0]
+        message, max_count = counter.most_common(1)[0]
+        messages.append(message)
         return messages, max_count
 
     messages = [
